@@ -1,0 +1,27 @@
+{
+    "name": "istiak/php-mvc",
+    "description": "a simple php light weight framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "istiak7",
+            "email": "istiak6069@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.1",
+        "pecee/simple-router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            
+            "app/Base/functions.php"
+        ]
+    },
+    "minimum-stability": "dev"
+  
+}

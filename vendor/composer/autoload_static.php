@@ -7,13 +7,31 @@ namespace Composer\Autoload;
 class ComposerStaticInitc10a09e831f283cfd7293c609be91e77
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '3b7ff8bb072be8d9fe00009fd35b77de' => __DIR__ . '/../..' . '/app/Base/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
         'P' => 
         array (
+            'PhpOption\\' => 10,
             'Pecee\\' => 6,
+        ),
+        'G' => 
+        array (
+            'GrahamCampbell\\ResultType\\' => 26,
+        ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
         ),
         'A' => 
         array (
@@ -22,9 +40,33 @@ class ComposerStaticInitc10a09e831f283cfd7293c609be91e77
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Php80\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'Pecee\\' => 
         array (
             0 => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee',
+        ),
+        'GrahamCampbell\\ResultType\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'App\\' => 
         array (
@@ -33,54 +75,12 @@ class ComposerStaticInitc10a09e831f283cfd7293c609be91e77
     );
 
     public static $classMap = array (
-        'App\\Base\\Controller' => __DIR__ . '/../..' . '/app/Base/Controller.php',
-        'App\\Controllers\\portfoliosController' => __DIR__ . '/../..' . '/app/Controllers/portfoliosController.php',
-        'App\\Controllers\\welcomeController' => __DIR__ . '/../..' . '/app/Controllers/welcomeController.php',
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Pecee\\Controllers\\IResourceController' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Controllers/IResourceController.php',
-        'Pecee\\Exceptions\\InvalidArgumentException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Exceptions/InvalidArgumentException.php',
-        'Pecee\\Http\\Exceptions\\MalformedUrlException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Exceptions/MalformedUrlException.php',
-        'Pecee\\Http\\Input\\IInputItem' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Input/IInputItem.php',
-        'Pecee\\Http\\Input\\InputFile' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Input/InputFile.php',
-        'Pecee\\Http\\Input\\InputHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Input/InputHandler.php',
-        'Pecee\\Http\\Input\\InputItem' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Input/InputItem.php',
-        'Pecee\\Http\\Middleware\\BaseCsrfVerifier' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Middleware/BaseCsrfVerifier.php',
-        'Pecee\\Http\\Middleware\\Exceptions\\TokenMismatchException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Middleware/Exceptions/TokenMismatchException.php',
-        'Pecee\\Http\\Middleware\\IMiddleware' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Middleware/IMiddleware.php',
-        'Pecee\\Http\\Middleware\\IpRestrictAccess' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Middleware/IpRestrictAccess.php',
-        'Pecee\\Http\\Request' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Request.php',
-        'Pecee\\Http\\Response' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Response.php',
-        'Pecee\\Http\\Security\\CookieTokenProvider' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Security/CookieTokenProvider.php',
-        'Pecee\\Http\\Security\\Exceptions\\SecurityException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Security/Exceptions/SecurityException.php',
-        'Pecee\\Http\\Security\\ITokenProvider' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Security/ITokenProvider.php',
-        'Pecee\\Http\\Url' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/Http/Url.php',
-        'Pecee\\SimpleRouter\\ClassLoader\\ClassLoader' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/ClassLoader/ClassLoader.php',
-        'Pecee\\SimpleRouter\\ClassLoader\\IClassLoader' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/ClassLoader/IClassLoader.php',
-        'Pecee\\SimpleRouter\\Event\\EventArgument' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Event/EventArgument.php',
-        'Pecee\\SimpleRouter\\Event\\IEventArgument' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Event/IEventArgument.php',
-        'Pecee\\SimpleRouter\\Exceptions\\ClassNotFoundHttpException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Exceptions/ClassNotFoundHttpException.php',
-        'Pecee\\SimpleRouter\\Exceptions\\HttpException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Exceptions/HttpException.php',
-        'Pecee\\SimpleRouter\\Exceptions\\NotFoundHttpException' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Exceptions/NotFoundHttpException.php',
-        'Pecee\\SimpleRouter\\Handlers\\CallbackExceptionHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Handlers/CallbackExceptionHandler.php',
-        'Pecee\\SimpleRouter\\Handlers\\DebugEventHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Handlers/DebugEventHandler.php',
-        'Pecee\\SimpleRouter\\Handlers\\EventHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Handlers/EventHandler.php',
-        'Pecee\\SimpleRouter\\Handlers\\IEventHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Handlers/IEventHandler.php',
-        'Pecee\\SimpleRouter\\Handlers\\IExceptionHandler' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Handlers/IExceptionHandler.php',
-        'Pecee\\SimpleRouter\\IRouterBootManager' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/IRouterBootManager.php',
-        'Pecee\\SimpleRouter\\Route\\IControllerRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/IControllerRoute.php',
-        'Pecee\\SimpleRouter\\Route\\IGroupRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/IGroupRoute.php',
-        'Pecee\\SimpleRouter\\Route\\ILoadableRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/ILoadableRoute.php',
-        'Pecee\\SimpleRouter\\Route\\IPartialGroupRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/IPartialGroupRoute.php',
-        'Pecee\\SimpleRouter\\Route\\IRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/IRoute.php',
-        'Pecee\\SimpleRouter\\Route\\LoadableRoute' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/LoadableRoute.php',
-        'Pecee\\SimpleRouter\\Route\\Route' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/Route.php',
-        'Pecee\\SimpleRouter\\Route\\RouteController' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteController.php',
-        'Pecee\\SimpleRouter\\Route\\RouteGroup' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteGroup.php',
-        'Pecee\\SimpleRouter\\Route\\RoutePartialGroup' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RoutePartialGroup.php',
-        'Pecee\\SimpleRouter\\Route\\RouteResource' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteResource.php',
-        'Pecee\\SimpleRouter\\Route\\RouteUrl' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteUrl.php',
-        'Pecee\\SimpleRouter\\Router' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Router.php',
-        'Pecee\\SimpleRouter\\SimpleRouter' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/SimpleRouter.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

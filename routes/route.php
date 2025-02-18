@@ -2,9 +2,9 @@
 
 use App\Controllers\portfoliosController;
 use App\Controllers\welcomeController;
-use Pecee\SimpleRouter\SimpleRouter;
+use App\Base\Router;
 
-SimpleRouter::get(BASE_DIR. '/',[welcomeController::class,'hello']);
+Router::get('/',[welcomeController::class,'hello']);
 
-SimpleRouter::get(BASE_DIR. '/portfolio/',[portfoliosController::class,'index']);
+Router::get('portfolio/',[portfoliosController::class,'index']);
 

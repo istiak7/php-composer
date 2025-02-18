@@ -7,3 +7,4 @@ class Controller{
         require_once VIEWS .'/'. $path;
     }
 }
+

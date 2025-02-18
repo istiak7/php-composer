@@ -7,11 +7,10 @@ use App\Models\Portfolio;
 class portfoliosController extends Controller{
 
     public function index(){
-        //$this->views('portfolios/index.php');
-
+       
         $portfolio = new Portfolio();
-        $portfolios = $portfolio->get();
-
+        $status=isset($_GET['status'])? intval($_GET['status']):-1;
+        $portfolios = $portfolio->get($status);
         return views('portfolios/index.php',['portfolios'=>$portfolios]);
     }
 

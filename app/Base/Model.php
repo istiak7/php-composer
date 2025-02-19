@@ -3,6 +3,11 @@
 namespace App\Base;
 use App\Base\Database;
 
+/**
+ * Model class
+ *  - This class is used to interact with the database
+ */
+
 class Model{
 
     private $connection;
@@ -13,7 +18,7 @@ class Model{
 
     }
 
-    public function execute(string $sqlQuery, array $bindparams=[]):\PDOStatement|false{
+    public function execute(string $sqlQuery, array $bindparams=[]):\PDOStatement|bool{
 
         $pdo = $this->connection;
         $stmt = $pdo->prepare($sqlQuery);
@@ -22,7 +27,7 @@ class Model{
 
     }
 
-    public function fetchAll(string $sqlQuery, array $bindparams=[]){
+    public function fetchAll(string $sqlQuery, array $bindparams=[]):array{
 
         $stmt = $this->execute($sqlQuery, $bindparams);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
@@ -42,8 +47,7 @@ class Model{
         $values = implode(',', array_fill(0, count($data), '?'));
         $sql = "INSERT INTO $table ($keys) VALUES ($values)";
         $this->execute($sql, array_values($data));
-        return $this->connection->lastInsertId(PDO::FETCH_ASSOCz);
-
+        return $this->connection->lastInsertId();
     }
 
 }

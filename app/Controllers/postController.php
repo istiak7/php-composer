@@ -4,6 +4,6 @@ class postController
 {
     public function post()
     {
-        views('post/index.php');
+        views('post/create.php');
     }
 }

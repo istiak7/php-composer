@@ -15,7 +15,8 @@ class postCreateController
         ];
         $post = new post();
         $tableName = $this->tableName;
-        $data = $post->insert($tableName, $data);
+        $post->insert($tableName, $data);
+        $data = $post->fetchPostData($tableName);
         return views('post/show.php',['data'=>$data]);
     }
 }

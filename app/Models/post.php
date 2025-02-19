@@ -9,5 +9,9 @@ class post extends Model
     {
         return $this->insertData($table, $data);
     }
+    public function fetchPostData(string $table)
+    {
+        return $this->fetchAll("SELECT * FROM $table");
+    }
 
 }

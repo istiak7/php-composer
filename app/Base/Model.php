@@ -35,4 +35,15 @@ class Model{
         return $stmt->fetch(\PDO::FETCH_ASSOC);
         
     }
+
+    public function insertData(string $table, array $data){
+
+        $keys = implode(',', array_keys($data));
+        $values = implode(',', array_fill(0, count($data), '?'));
+        $sql = "INSERT INTO $table ($keys) VALUES ($values)";
+        $this->execute($sql, array_values($data));
+        return $this->connection->lastInsertId(PDO::FETCH_ASSOCz);
+
+    }
+
 }
